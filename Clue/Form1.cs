@@ -12,6 +12,8 @@ using System.IO;
 //https://github.com/ckdghks5179/clue_game
 //https://github.com/ckdghks5179/clue_game.git
 
+//https://github.com/HyeongjunCH/clue_game.git
+//내꺼
 
 namespace Clue
 {
@@ -205,8 +207,6 @@ namespace Clue
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             player1.SizeMode = PictureBoxSizeMode.StretchImage;
             player2.SizeMode = PictureBoxSizeMode.StretchImage;
-
-
         }
 
         private void btnRoll_Click(object sender, EventArgs e)
@@ -215,6 +215,7 @@ namespace Clue
             dice1.Text = diceValue.ToString();
             lbRemain.Text = diceValue.ToString();
             btnRoll.Enabled = false;
+            btnTurnEnd.Enabled = true;
         }
 
         private void btnUp_Click(object sender, EventArgs e)
@@ -228,6 +229,11 @@ namespace Clue
                 }
 
                 if (clue_map[playerList[0].x - 1, playerList[0].y] == 1)
+                {
+                    MessageBox.Show("이동할 수 없습니다.");
+                    return;
+                }
+                else if (clue_map[playerList[0].x - 1, playerList[0].y] == 3)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
@@ -257,8 +263,13 @@ namespace Clue
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
+                else if (clue_map[playerList[0].x + 1, playerList[0].y] == 3)
+                {
+                    MessageBox.Show("이동할 수 없습니다.");
+                    return;
+                }
 
-                player1.Location = clue_map_point[playerList[0].x + 1, playerList[0].y];
+                    player1.Location = clue_map_point[playerList[0].x + 1, playerList[0].y];
                 clue_map[playerList[0].x, playerList[0].y] = 0;
                 clue_map[playerList[0].x + 1, playerList[0].y] = 3;
                 playerList[0].x += 1;
@@ -278,6 +289,11 @@ namespace Clue
                 }
 
                 if (clue_map[playerList[0].x, playerList[0].y + 1] == 1)
+                {
+                    MessageBox.Show("이동할 수 없습니다.");
+                    return;
+                }
+                else if (clue_map[playerList[0].x, playerList[0].y + 1] == 3)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
@@ -307,6 +323,11 @@ namespace Clue
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
+                else if (clue_map[playerList[0].x, playerList[0].y - 1] == 3)
+                {
+                    MessageBox.Show("이동할 수 없습니다.");
+                    return;
+                }
 
                 player1.Location = clue_map_point[playerList[0].x, playerList[0].y - 1];
                 clue_map[playerList[0].x, playerList[0].y] = 0;
@@ -321,11 +342,7 @@ namespace Clue
         {
             lbRemain.Text = "0";
             btnRoll.Enabled = true;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            btnTurnEnd.Enabled = false;
         }
 
         private void btnNote_Click(object sender, EventArgs e)
