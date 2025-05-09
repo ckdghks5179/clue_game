@@ -8,3 +8,5 @@ C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.csproj.GenerateResource.cache
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.csproj.CoreCompileInputs.cache
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.exe
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.pdb
+C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.Form2.resources
+C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.PlayerChoose.resources

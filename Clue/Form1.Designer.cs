@@ -32,7 +32,6 @@
             this.btnRoll = new System.Windows.Forms.Button();
             this.btnTurnEnd = new System.Windows.Forms.Button();
             this.dice1 = new System.Windows.Forms.Label();
-            this.dice2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbRemain = new System.Windows.Forms.Label();
             this.btnUp = new System.Windows.Forms.Button();
@@ -42,6 +41,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.player1 = new System.Windows.Forms.PictureBox();
             this.player2 = new System.Windows.Forms.PictureBox();
+            this.btnNote = new System.Windows.Forms.Button();
+            this.btnSug = new System.Windows.Forms.Button();
+            this.btnFinalSug = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player2)).BeginInit();
@@ -49,7 +51,7 @@
             // 
             // btnRoll
             // 
-            this.btnRoll.Location = new System.Drawing.Point(1081, 696);
+            this.btnRoll.Location = new System.Drawing.Point(948, 696);
             this.btnRoll.Name = "btnRoll";
             this.btnRoll.Size = new System.Drawing.Size(162, 73);
             this.btnRoll.TabIndex = 0;
@@ -59,7 +61,7 @@
             // 
             // btnTurnEnd
             // 
-            this.btnTurnEnd.Location = new System.Drawing.Point(1081, 793);
+            this.btnTurnEnd.Location = new System.Drawing.Point(948, 789);
             this.btnTurnEnd.Name = "btnTurnEnd";
             this.btnTurnEnd.Size = new System.Drawing.Size(162, 73);
             this.btnTurnEnd.TabIndex = 1;
@@ -70,20 +72,11 @@
             // dice1
             // 
             this.dice1.AutoSize = true;
-            this.dice1.Location = new System.Drawing.Point(1087, 607);
+            this.dice1.Location = new System.Drawing.Point(1023, 622);
             this.dice1.Name = "dice1";
             this.dice1.Size = new System.Drawing.Size(23, 24);
             this.dice1.TabIndex = 2;
             this.dice1.Text = "1";
-            // 
-            // dice2
-            // 
-            this.dice2.AutoSize = true;
-            this.dice2.Location = new System.Drawing.Point(1204, 607);
-            this.dice2.Name = "dice2";
-            this.dice2.Size = new System.Drawing.Size(23, 24);
-            this.dice2.TabIndex = 3;
-            this.dice2.Text = "1";
             // 
             // pictureBox1
             // 
@@ -97,7 +90,7 @@
             // lbRemain
             // 
             this.lbRemain.AutoSize = true;
-            this.lbRemain.Location = new System.Drawing.Point(1183, 669);
+            this.lbRemain.Location = new System.Drawing.Point(1052, 669);
             this.lbRemain.Name = "lbRemain";
             this.lbRemain.Size = new System.Drawing.Size(23, 24);
             this.lbRemain.TabIndex = 5;
@@ -105,7 +98,7 @@
             // 
             // btnUp
             // 
-            this.btnUp.Location = new System.Drawing.Point(1172, 142);
+            this.btnUp.Location = new System.Drawing.Point(1281, 640);
             this.btnUp.Name = "btnUp";
             this.btnUp.Size = new System.Drawing.Size(55, 76);
             this.btnUp.TabIndex = 6;
@@ -115,7 +108,7 @@
             // 
             // btnDown
             // 
-            this.btnDown.Location = new System.Drawing.Point(1172, 304);
+            this.btnDown.Location = new System.Drawing.Point(1281, 802);
             this.btnDown.Name = "btnDown";
             this.btnDown.Size = new System.Drawing.Size(55, 76);
             this.btnDown.TabIndex = 7;
@@ -125,7 +118,7 @@
             // 
             // btnRight
             // 
-            this.btnRight.Location = new System.Drawing.Point(1240, 235);
+            this.btnRight.Location = new System.Drawing.Point(1349, 733);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(80, 52);
             this.btnRight.TabIndex = 8;
@@ -135,7 +128,7 @@
             // 
             // btnLeft
             // 
-            this.btnLeft.Location = new System.Drawing.Point(1076, 235);
+            this.btnLeft.Location = new System.Drawing.Point(1185, 733);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(82, 52);
             this.btnLeft.TabIndex = 9;
@@ -146,7 +139,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1085, 669);
+            this.label1.Location = new System.Drawing.Point(954, 669);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 24);
             this.label1.TabIndex = 10;
@@ -170,11 +163,43 @@
             this.player2.TabIndex = 12;
             this.player2.TabStop = false;
             // 
+            // btnNote
+            // 
+            this.btnNote.Location = new System.Drawing.Point(958, 61);
+            this.btnNote.Name = "btnNote";
+            this.btnNote.Size = new System.Drawing.Size(175, 60);
+            this.btnNote.TabIndex = 13;
+            this.btnNote.Text = "Memo";
+            this.btnNote.UseVisualStyleBackColor = true;
+            this.btnNote.Click += new System.EventHandler(this.btnNote_Click);
+            // 
+            // btnSug
+            // 
+            this.btnSug.Location = new System.Drawing.Point(958, 175);
+            this.btnSug.Name = "btnSug";
+            this.btnSug.Size = new System.Drawing.Size(175, 60);
+            this.btnSug.TabIndex = 14;
+            this.btnSug.Text = "Suggest";
+            this.btnSug.UseVisualStyleBackColor = true;
+            // 
+            // btnFinalSug
+            // 
+            this.btnFinalSug.ForeColor = System.Drawing.Color.Red;
+            this.btnFinalSug.Location = new System.Drawing.Point(958, 308);
+            this.btnFinalSug.Name = "btnFinalSug";
+            this.btnFinalSug.Size = new System.Drawing.Size(207, 83);
+            this.btnFinalSug.TabIndex = 15;
+            this.btnFinalSug.Text = "Final\r\nSuggest";
+            this.btnFinalSug.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1483, 1023);
+            this.Controls.Add(this.btnFinalSug);
+            this.Controls.Add(this.btnSug);
+            this.Controls.Add(this.btnNote);
             this.Controls.Add(this.player2);
             this.Controls.Add(this.player1);
             this.Controls.Add(this.label1);
@@ -184,7 +209,6 @@
             this.Controls.Add(this.btnUp);
             this.Controls.Add(this.lbRemain);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dice2);
             this.Controls.Add(this.dice1);
             this.Controls.Add(this.btnTurnEnd);
             this.Controls.Add(this.btnRoll);
@@ -204,7 +228,6 @@
         private System.Windows.Forms.Button btnRoll;
         private System.Windows.Forms.Button btnTurnEnd;
         private System.Windows.Forms.Label dice1;
-        private System.Windows.Forms.Label dice2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbRemain;
         private System.Windows.Forms.Button btnUp;
@@ -214,6 +237,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox player1;
         private System.Windows.Forms.PictureBox player2;
+        private System.Windows.Forms.Button btnNote;
+        private System.Windows.Forms.Button btnSug;
+        private System.Windows.Forms.Button btnFinalSug;
     }
 }
 
