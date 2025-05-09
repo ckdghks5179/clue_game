@@ -25,11 +25,6 @@ namespace Clue
             string playerName = comboBox1.Text;
             playerCount = Convert.ToInt32(playerName);
 
-            if (playerCount < 3 || playerCount > 6)
-            {
-                MessageBox.Show("Please select a number between 3 and 6 players.");
-                return;
-            }
 
             // Assuming you have a method to start the game with the selected number of players
             StartGame(playerCount);
