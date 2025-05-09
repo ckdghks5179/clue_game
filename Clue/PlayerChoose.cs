@@ -22,8 +22,8 @@ namespace Clue
         private void button1_Click(object sender, EventArgs e)
         {
             int playerCount = 0;
-            string playerName = comboBox1.Text;
-            playerCount = Convert.ToInt32(playerName);
+            string player = comboBox1.Text;
+            playerCount = Convert.ToInt32(player);
 
 
             // Assuming you have a method to start the game with the selected number of players
