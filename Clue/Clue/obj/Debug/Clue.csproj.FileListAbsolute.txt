@@ -14,7 +14,6 @@ C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\bin\Debug\Clue.exe.c
 C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\bin\Debug\Clue.exe
 C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\bin\Debug\Clue.pdb
 C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\obj\Debug\Clue.csproj.AssemblyReference.cache
-C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\obj\Debug\Clue.csproj.SuggestedBindingRedirects.cache
 C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\obj\Debug\Clue.Form1.resources
 C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\obj\Debug\Clue.Form2.resources
 C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\Clue\obj\Debug\Clue.PlayerChoose.resources

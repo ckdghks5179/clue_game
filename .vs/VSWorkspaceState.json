@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Clue"
+    "\\Clue",
+    "\\Clue\\Clue"
   ],
-  "SelectedNode": "\\Clue\\PlayerChoose.cs",
+  "SelectedNode": "\\Clue\\Clue\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

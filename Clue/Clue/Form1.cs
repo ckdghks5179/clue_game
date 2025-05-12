@@ -29,7 +29,7 @@ namespace Clue
         private int playerId;
         private PictureBox myPlayerBox;
         private Dictionary<int, PictureBox> playerBoxes = new Dictionary<int, PictureBox>();
-        private Point[,] clue_map_point;
+        //private Point[,] clue_map_point;
         private int[,] clue_map => gameState.clue_map;
 
         private Player[] playerList => gameState.Players;
@@ -155,6 +155,8 @@ namespace Clue
         {
             bool isMyTurn = gameState.CurrentTurn == playerId;
             btnRoll.Enabled = isMyTurn;
+            btnTurnEnd.Enabled = isMyTurn;
+
             /* btnUp.Enabled = isMyTurn;
              btnDown.Enabled = isMyTurn;
              btnLeft.Enabled = isMyTurn;
@@ -168,8 +170,20 @@ namespace Clue
             return colors[id % colors.Length];
         }
 
+        public void UpdatePlayerPositions()
+        {
+            for (int i = 0; i < gameState.TotalPlayers; i++)
+            {
+                var p = gameState.Players[i];
+                if (playerBoxes.ContainsKey(i))
+                {
+                    playerBoxes[i].Location = gameState.clue_map_point[p.x, p.y];
+                }
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             for (int i = 0; i < gameState.TotalPlayers; i++)
             {
                 Player p = gameState.Players[i];
@@ -187,6 +201,8 @@ namespace Clue
 
                 this.Controls.Add(playerBox);
 
+
+                playerBox.BringToFront();
                 // ⬇️ 현재 Form이 담당하는 플레이어라면 저장
                 if (i == playerId)
                 {
@@ -228,108 +244,27 @@ namespace Clue
         {
 
             TryMove(-1, 0);
-            /*if (lbRemain.Text != "0")
-            {
-                if (player.x - 1 < 0)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                if (clue_map[player.x - 1, player.y] == 1)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                player1.Location = clue_map_point[player.x - 1, player.y];
-                clue_map[player.x, player.y] = 0;
-                clue_map[player.x - 1, player.y] = 3;
-                player.x -= 1;
-
-                lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
-            }*/
+            
 
         }   
         private void btnDown_Click(object sender, EventArgs e)
         {
 
             TryMove(1, 0);
-            /*if (lbRemain.Text != "0")
-            {
-                if(player.x + 1 > 24)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                if (clue_map[player.x + 1, player.y] == 1)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                player1.Location = clue_map_point[player.x + 1, player.y];
-                clue_map[player.x, player.y] = 0;
-                clue_map[player.x + 1, player.y] = 3;
-                player.x += 1;
-
-                lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
-               }*/
+           
         }
 
         private void btnRight_Click(object sender, EventArgs e)
         {
 
             TryMove(0, 1);
-            /*if (lbRemain.Text != "0")
-            {
-                if (player.y + 1 > 23)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                if (clue_map[player.x, player.y + 1] == 1)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                player1.Location = clue_map_point[player.x, player.y + 1];
-                clue_map[player.x, player.y] = 0;
-                clue_map[player.x, player.y + 1] = 3;
-                player.y += 1;
-
-                lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
-            }*/
+           
         }
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
             TryMove(0, -1);
-            /*
-            if (lbRemain.Text != "0")
-            {
-                if (player.y - 1 < 0)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                if (clue_map[player.x, player.y - 1] == 1)
-                {
-                    MessageBox.Show("이동할 수 없습니다.");
-                    return;
-                }
-
-                player1.Location = clue_map_point[player.x, player.y - 1];
-                clue_map[player.x, player.y] = 0;
-                clue_map[player.x, player.y - 1] = 3;
-                player.y -= 1;
-
-                lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
-            }*/
+           
         }
 
         private void btnTurnEnd_Click(object sender, EventArgs e)
@@ -340,6 +275,7 @@ namespace Clue
             foreach (var form in PlayerChoose.AllPlayerForms)
             {
                 form.UpdateControlState();
+                form.UpdatePlayerPositions();
             }
         }
 
