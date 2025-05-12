@@ -29,7 +29,7 @@ namespace Clue
         private int playerId;
         private PictureBox myPlayerBox;
         private Dictionary<int, PictureBox> playerBoxes = new Dictionary<int, PictureBox>();
-        private Point[,] clue_map_point;
+        //private Point[,] clue_map_point;
         private int[,] clue_map => gameState.clue_map;
 
         private Player[] playerList => gameState.Players;
@@ -170,6 +170,7 @@ namespace Clue
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             for (int i = 0; i < gameState.TotalPlayers; i++)
             {
                 Player p = gameState.Players[i];
@@ -186,7 +187,7 @@ namespace Clue
                 playerBoxes[i] = playerBox;
 
                 this.Controls.Add(playerBox);
-
+                playerBox.BringToFront();
                 // ⬇️ 현재 Form이 담당하는 플레이어라면 저장
                 if (i == playerId)
                 {
