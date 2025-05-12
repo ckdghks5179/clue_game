@@ -10,3 +10,16 @@ C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.exe
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.pdb
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.Form2.resources
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.PlayerChoose.resources
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\bin\Debug\Clue.exe.config
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\bin\Debug\Clue.exe
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\bin\Debug\Clue.pdb
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.csproj.AssemblyReference.cache
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.csproj.SuggestedBindingRedirects.cache
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.Form1.resources
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.Form2.resources
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.PlayerChoose.resources
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.Properties.Resources.resources
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.csproj.GenerateResource.cache
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.csproj.CoreCompileInputs.cache
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.exe
+C:\Users\ckdgh\Source\Repos\ckdghks5179\clue_game\Clue\obj\Debug\Clue.pdb

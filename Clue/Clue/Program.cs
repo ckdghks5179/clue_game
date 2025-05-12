@@ -16,7 +16,15 @@ namespace Clue
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            PlayerChoose chooser = new PlayerChoose();
+            chooser.ShowDialog();
+
+            if (PlayerChoose.AllPlayerForms.Count > 0)
+            {
+                // 첫 번째 플레이어의 Form1을 메인폼으로 실행
+                Application.Run(PlayerChoose.AllPlayerForms[0]);
+            }
         }
     }
 }
