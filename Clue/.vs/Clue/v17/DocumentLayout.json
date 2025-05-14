@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ckdgh\\source\\repos\\ckdghks5179\\clue_game\\Clue\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\ckdgh\\source\\repos\\ckdghks5179\\clue_game\\Clue\\clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|c:\\users\\ckdgh\\source\\repos\\ckdghks5179\\clue_game\\clue\\clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|c:\\users\\ckdgh\\source\\repos\\ckdghks5179\\clue_game\\clue\\clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\ckdgh\\source\\repos\\ckdghks5179\\clue_game\\Clue\\clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -83,8 +83,7 @@
               "RelativeToolTip": "Clue\\PlayerChoose.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAQwEMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T18:08:29.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T18:08:29.817Z"
             },
             {
               "$type": "Document",
@@ -106,7 +105,7 @@
               "RelativeDocumentMoniker": "Clue\\Form1.cs",
               "ToolTip": "C:\\Users\\ckdgh\\source\\repos\\ckdghks5179\\clue_game\\Clue\\Clue\\Form1.cs",
               "RelativeToolTip": "Clue\\Form1.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAYwBYBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAYwJsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T13:13:52.921Z",
               "EditorCaption": ""
@@ -131,8 +130,7 @@
               "ToolTip": "C:\\Users\\ckdgh\\source\\repos\\ckdghks5179\\clue_game\\Clue\\Clue\\Form1.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "Clue\\Form1.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T17:09:33.883Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-12T17:09:33.883Z"
             },
             {
               "$type": "Document",
