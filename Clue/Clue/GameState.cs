@@ -166,6 +166,23 @@ namespace Clue
                 openCard.Add(Deck[0]);
                 Deck.RemoveAt(0);
             }
+
+            //디버그 창에 카드 출력
+            foreach (var player in Players)
+            {
+                Console.WriteLine($"Player {player.id + 1} hands:");
+                foreach (var card in player.hands)
+                {
+                    Console.WriteLine($"- {card.Type}: {card.Name}");
+                }
+            }
+
+            //공개 카드 출력
+            Console.WriteLine("Open Cards:");
+            foreach (var card in openCard)
+            {
+                Console.WriteLine($"- {card.Type}: {card.Name}");
+            }
         }
 
     }
