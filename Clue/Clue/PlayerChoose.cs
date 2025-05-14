@@ -70,13 +70,16 @@ namespace Clue
                 {
                     id = i,
                     name = $"Player {i + 1}",
-                    cards = new List<Card>(), // 카드 분배 로직은 여기서 추가 가능
+                    hands = new List<Card>(), // 카드 분배 로직은 여기서 추가 가능
                     x = initialX[i],
                     y = initialY[i],
                     isTurn = (i == 0)
                 };
             }
 
+            //카드 분배 로직 추가
+            gameState.InitializeCards(); //카드 초기화 및 봉투에 정답 카드 넣기
+            gameState.distributeCards(); //카드 나눠주기
 
             for (int i = 0; i < playerCount; i++)
             {

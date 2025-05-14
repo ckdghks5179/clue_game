@@ -211,6 +211,8 @@ namespace Clue
             }
 
             UpdateControlState();
+
+            
         }
 
         private void btnRoll_Click(object sender, EventArgs e)
