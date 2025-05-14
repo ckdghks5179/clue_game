@@ -131,14 +131,14 @@ namespace Clue
             return random.Next(2, 13);
         }
 
-        private bool isDoor(int x, int y)
+       /* private bool isDoor(int x, int y)
         {
             if (clue_map[x, y] == 2)
             {
                 return true;
             }
             return false;
-        }
+        }*/
 
         public Form1(GameState gamestate1, int playerId)
         {
